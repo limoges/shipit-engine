@@ -69,7 +69,14 @@ module Shipit
 
   def redis_url
     puts "Where would this be?"
+    puts Rails
+    puts "Rails"
+    puts Rails.application
+    puts "Rails.application"
+    puts Rails.application.secrets
+    puts "Rails.application.secrets"
     puts secrets
+    puts "secrets"
     puts URI(secrets.redis_url)
     secrets.redis_url.present? ? URI(secrets.redis_url) : nil
   end
